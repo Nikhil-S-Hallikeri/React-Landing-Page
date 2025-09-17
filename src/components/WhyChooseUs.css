@@ -1,0 +1,160 @@
+:root {
+  --primary-blue: #0d47a1;
+  --primary-yellow: #ffca28;
+  --dark-blue: #1a237e;
+  --text-dark: #212121;
+  --text-light: #f5f5f5;
+}
+
+.why-choose-us-section {
+  background-color: var(--primary-blue);
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.why-choose-us-title {
+  color: var(--primary-yellow);
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+}
+
+.slider-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.card-wrapper {
+  padding: 20px;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.choose-us-card {
+  border-radius: 20px;
+  padding: 25px 20px;
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--primary-yellow);
+  color: var(--text-dark);
+  transform: scale(0.8);
+  height: 380px;
+  opacity: 0.7;
+}
+
+.choose-us-card h3 {
+  color: var(--primary-blue);
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.choose-us-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.slick-center + .slick-active .choose-us-card,
+.slick-active:has(+ .slick-center) .choose-us-card {
+  background-color: var(--dark-blue);
+  color: var(--text-light);
+  transform: scale(0.9);
+  height: 425px;
+  opacity: 1;
+}
+
+.slick-center + .slick-active .choose-us-card h3,
+.slick-active:has(+ .slick-center) .choose-us-card h3 {
+  color: #ffffff;
+}
+
+.slick-center .choose-us-card {
+  background-color: var(--primary-yellow);
+  color: var(--text-dark);
+  transform: scale(1.05);
+  height: 460px;
+  opacity: 1;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.slick-center .choose-us-card h3 {
+  color: var(--primary-blue);
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.custom-arrow:hover {
+  background-color: rgb(235, 235, 181);
+}
+
+.custom-arrow::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+}
+
+.custom-prev-arrow {
+  left: -25px;
+}
+.custom-prev-arrow::before {
+  transform: translate(-70%, -50%) rotate(-135deg);
+}
+
+.custom-next-arrow {
+  right: -55px;
+}
+.custom-next-arrow::before {
+  transform: translate(-30%, -50%) rotate(45deg);
+}
+
+@media (max-width: 768px) {
+  .custom-arrow {
+    display: none !important;
+  }
+}
+
+.enroll-now-btn-yellow {
+  display: block;
+  margin: 70px auto 0;
+  background-color: var(--primary-yellow);
+  color: var(--text-dark);
+  border: none;
+  border-radius: 10px;
+  padding: 18px 45px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.enroll-now-btn-yellow:hover {
+  background-color: #fdd835;
+  transform: scale(1.05);
+}

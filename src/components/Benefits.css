@@ -1,0 +1,107 @@
+.benefits-section {
+  background-color: var(--primary-blue);
+  background-image: url('../assets/benefits-bg-pattern.png');
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.benefits-title {
+  color: var(--primary-yellow);
+  text-align: center;
+}
+
+.benefits-diagram {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  height: 700px;
+  margin: 50px auto 0;
+}
+
+.benefits-items>* {
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .benefits-man {
+    display: none;
+  }
+
+  .benefits-diagram {
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .benefits-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .benefits-items>* {
+    position: static !important;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .benefit-description {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: var(--text-light);
+    padding: 10px 15px;
+  }
+
+  .flag-item::after {
+    display: none;
+  }
+}
+
+.benefits-man {
+  position: absolute;
+  bottom: 0;
+  left: -60px;
+  height: 85%;
+  z-index: 10;
+  top: 0px;
+}
+
+.benefit-step,
+.benefit-outcome {
+  position: absolute;
+  background-color: var(--primary-yellow);
+  color: var(--text-dark);
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+}
+
+.flag-item::after {
+  content: '';
+  position: absolute;
+  top: -70px;
+  right: 3px;
+  width: 91px;
+  height: 75px;
+  background-image: url('../assets/finish-flag.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.benefit-description {
+  position: absolute;
+  width: 280px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-light);
+  padding: 5px 20px;
+  border-radius: 12px;
+  z-index: 5;
+}
+
+.benefit-description p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}

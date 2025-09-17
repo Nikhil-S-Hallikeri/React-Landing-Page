@@ -1,0 +1,38 @@
+/* src/index.css */
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Define color variables and global styles */
+:root {
+  --primary-blue: #0d47a1;
+  --dark-blue: #0a3a82;
+  --primary-yellow: #fdd835;
+  --text-dark: #212121;
+  --text-light: #ffffff;
+  --bg-light: #ffffff;
+  --bg-grey: #f8f9fa;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px; /* Standard padding for sections */
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--primary-blue);
+}

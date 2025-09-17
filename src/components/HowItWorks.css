@@ -1,0 +1,187 @@
+.how-it-works-section {
+  background-color: var(--bg-grey); 
+  padding: 80px 0;
+  background-image: url('../assets/benefits-bg-pattern.png');
+  background-repeat: repeat;
+}
+
+.how-it-works-title {
+  color: var(--primary-blue);
+  font-weight: 800;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.step-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.step-header.icon-first {
+  flex-direction: row-reverse;
+}
+
+.step-number-box,
+.step-icon-box {
+  width: 90px;
+  height: 90px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-number-box {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.step-icon-box img {
+  width: 45px;
+  height: 45px;
+}
+
+.blue-bg {
+  background-color: var(--primary-blue);
+  color: white;
+}
+
+.yellow-bg {
+  background-color: var(--primary-yellow);
+  color: var(--text-dark);
+}
+
+.white-bg {
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) inset; 
+}
+
+.black-bg {
+  background-color: var(--text-dark);
+}
+.black-bg img {
+  filter: brightness(0) invert(1);
+}
+
+.step-content h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0 0 10px 0;
+}
+
+.step-content p {
+  font-size: 0.95rem;
+  color: #6c757d; 
+  line-height: 1.7;
+  margin: 0;
+}
+
+.enroll-now-btn {
+  display: block;
+  margin: 60px auto 0;
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 18px 45px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.enroll-now-btn:hover {
+  background-color: var(--dark-blue);
+  transform: scale(1.1); 
+}
+
+
+@media (max-width: 1024px) {
+  .how-it-works-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  .steps-grid {
+    gap: 30px;
+  }
+  .step-number-box,
+  .step-icon-box {
+    width: 75px;
+    height: 75px;
+  }
+  .step-number-box {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .steps-grid {
+    grid-template-columns: 1fr; 
+    max-width: 600px;
+  }
+  .how-it-works-title {
+    font-size: 1.8rem;
+  }
+  .step-card {
+    padding: 25px;
+  }
+  .step-content h3 {
+    font-size: 1.1rem;
+  }
+  .step-content p {
+    font-size: 0.9rem;
+  }
+  .enroll-now-btn {
+    padding: 15px 35px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .how-it-works-title {
+    font-size: 1.5rem;
+  }
+  .step-number-box,
+  .step-icon-box {
+    width: 60px;
+    height: 60px;
+  }
+  .step-number-box {
+    font-size: 2.2rem;
+  }
+  .step-content h3 {
+    font-size: 1rem;
+  }
+  .step-content p {
+    font-size: 0.85rem;
+  }
+  .enroll-now-btn {
+    padding: 12px 28px;
+    font-size: 0.9rem;
+  }
+}

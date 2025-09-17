@@ -1,0 +1,131 @@
+.footer {
+  background-color: var(--primary-blue);
+  color: var(--text-light);
+  padding: 60px 0;
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.footer-logo-section {
+  flex-shrink: 0;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer-links-section {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-grow: 1;
+}
+
+.footer-link-col h4 {
+  margin: 0 0 15px 0;
+  color: #bdbdbd;
+  font-weight: 500;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.footer-link-col p,
+.footer-link-col a {
+  margin: 0;
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+.footer-link-col a:hover {
+  text-decoration: underline;
+}
+
+.footer-social-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 0;
+}
+
+.footer-social-section a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social-section a:hover img {
+  transform: scale(1.15);
+}
+
+
+@media (max-width: 992px) {
+  .footer-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-logo-section {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+
+  .footer-links-section {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 40px;
+    flex-basis: 100%;
+    order: 3;
+  }
+
+  .footer-social-section {
+    flex-basis: 100%;
+    justify-content: center;
+    margin-bottom: 30px;
+    order: 2;
+  }
+
+  .footer-link-col {
+    text-align: center;
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 40px 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-logo-section,
+  .footer-social-section,
+  .footer-links-section {
+    flex-basis: auto;
+    margin-bottom: 0;
+    order: 0;
+  }
+
+  .footer-links-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-link-col {
+    flex-basis: auto;
+    width: 100%;
+  }
+}
